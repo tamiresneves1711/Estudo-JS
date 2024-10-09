@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function verificarNumero(num)
+        {
+            if (num % 2 === 0) {
+                // Declaração dentro do bloco 'if'
+                let resultado = "O número é par"; // 'resultado' é acessível apenas dentro deste bloco
+                console.log(resultado); // Exibe: O número é par
+            }else {
+                let resultado = "O número é ímpar"; // 'resultado' é acessível apenas dentro deste bloco
+                console.log(resultado); // Exibe: O número é ímpar
+            }
+
+            // Aqui, o 'resultado' não está definido, pois está fora do escopo dos blocos 
+            //console.log(resultado); //erro:resultado não está definida
+        }
+         // Chamando a função
+         verificarNumero(4); // saída: o número é par
+         verificarNumero(7); // saída: o número é ímpar
+    </script>
+    
+</body>
+</html>
